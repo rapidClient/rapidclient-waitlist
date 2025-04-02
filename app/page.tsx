@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import logo from '@/public/logo.png';
 import Modal from './components/home/modal';
 import Waitlist from './components/home/waitlist';
 
@@ -11,10 +10,10 @@ export default function Home() {
     <>
       <main className='bg-white flex flex-col'>
         {/* Header Section */}
-        <header className='w-full px-6 sm:px-12 md:px-16 lg:px-32 xl:px-48 py-6 flex justify-between items-center'>
+        <header className='bg-white w-full px-6 sm:px-12 md:px-16 lg:px-32 xl:px-48 py-6 flex justify-between items-center'>
           <div className='flex items-center'>
             <Image
-              src={logo}
+              src='/logo.png'
               alt='Company Logo'
               width={45}
               height={45}
@@ -35,7 +34,7 @@ export default function Home() {
         </header>
 
         {/* Hero Section */}
-        <section className='flex-grow flex items-center justify-center px-6 sm:px-12 md:px-16 lg:px-32 xl:px-48 py-8 md:py-36'>
+        <section className='bg-white flex-grow flex items-center justify-center px-6 sm:px-12 md:px-16 lg:px-32 xl:px-48 py-8 md:py-36'>
           <div className='max-w-5xl text-center'>
             <h2 className='text-[#151C24] font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6'>
               Scale Smarter, <span className='text-[#4188D9]'>Not Harder</span>
@@ -56,7 +55,7 @@ export default function Home() {
         </section>
 
         {/* Footer Section */}
-        <footer className='absolute bottom-0 w-full border-t border-[#DCE8F5] pt-4 pb-6 flex justify-center items-center'>
+        <footer className='bg-white absolute bottom-0 w-full border-t border-[#DCE8F5] pt-4 pb-6 flex justify-center items-center'>
           <p className='text-sm md:text-base text-[#3C4B5C]'>
             &copy; {new Date().getFullYear()} rapidClient. All rights reserved.
           </p>
