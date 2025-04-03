@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${outline.className} antialiased`}>{children}</body>
+      <body className={`${outline.className} antialiased bg-white`}>
+        {children}
+      </body>
     </html>
   );
 }

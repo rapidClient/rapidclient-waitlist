@@ -83,8 +83,8 @@ const Waitlist = () => {
           </form>
 
           <p className='text-xs text-gray-500 text-center'>
-            By joining, you agree to receive updates from Vividly. We respect
-            your privacy and won&apos;t share your information.
+            By joining, you agree to receive updates from rapidClient. We
+            respect your privacy and won&apos;t share your information.
           </p>
         </div>
       ) : (

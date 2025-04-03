@@ -28,7 +28,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       onClick={onClose}
     >
       <div
-        className='shadow-lg max-w-md w-full bg-white rounded-3xl p-6 relative animate-slide-up'
+        className='shadow-lg max-w-md w-full bg-white rounded-3xl md:p-6 m-4 relative animate-slide-up'
         onClick={(e) => e.stopPropagation()}
       >
         {children}

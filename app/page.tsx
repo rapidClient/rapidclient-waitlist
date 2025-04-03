@@ -8,20 +8,16 @@ export default function Home() {
   const [isModalOpen, setModalOpen] = useState(false);
   return (
     <>
-      <main className='bg-white flex flex-col'>
-        {/* Header Section */}
+      <main className='min-h-screen flex flex-col bg-white'>
         <header className='bg-white w-full px-6 sm:px-12 md:px-16 lg:px-32 xl:px-48 py-6 flex justify-between items-center'>
           <div className='flex items-center'>
             <Image
-              src='/logo.png'
+              src='/logo-with-name.png'
               alt='Company Logo'
-              width={45}
-              height={45}
-              className='object-contain w-[40px] h-[40px] md:w-[60px] md:h-[60px]'
+              width={500}
+              height={500}
+              className='object-contain w-[150px] h-[60px] md:w-[220px] md:h-[80px]'
             />
-            <h1 className='text-[#4188D9] font-bold text-xl md:text-3xl tracking-tight'>
-              rapidClient
-            </h1>
           </div>
           <nav className='hidden md:block'>
             <button
@@ -33,8 +29,7 @@ export default function Home() {
           </nav>
         </header>
 
-        {/* Hero Section */}
-        <section className='bg-white flex-grow flex items-center justify-center px-6 sm:px-12 md:px-16 lg:px-32 xl:px-48 py-8 md:py-36'>
+        <section className='flex items-center justify-center px-6 sm:px-12 md:px-16 lg:px-32 xl:px-48 py-8 md:py-36 flex-grow'>
           <div className='max-w-5xl text-center'>
             <h2 className='text-[#151C24] font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6'>
               Scale Smarter, <span className='text-[#4188D9]'>Not Harder</span>
@@ -54,8 +49,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Footer Section */}
-        <footer className='bg-white absolute bottom-0 w-full border-t border-[#DCE8F5] pt-4 pb-6 flex justify-center items-center'>
+        <footer className='bg-white w-full border-t border-[#DCE8F5] pt-4 pb-6 flex justify-center items-center mt-auto'>
           <p className='text-sm md:text-base text-[#3C4B5C]'>
             &copy; {new Date().getFullYear()} rapidClient. All rights reserved.
           </p>
